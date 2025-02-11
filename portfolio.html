@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Naga Bhushan Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* Video Background */
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        /* Navigation Bar */
+        header {
+            width: 100%;
+            position: fixed;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        nav .nav-link {
+            font-size: 1.1rem;
+            color: #000 !important;
+            padding: 0 1.5rem !important;
+            cursor: pointer;
+        }
+
+        /* Sections */
+        .container-section {
+            padding: 100px 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Background Overlay */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        .contact-btn {
+            background-color: #ecf200;
+            padding: 0.5rem 1.5rem;
+            border: none;
+            font-weight: 500;
+        }
+        #home{
+            display: flex;
+            flex-direction: column;
+        }
+        #about{
+            display: flex;
+            flex-direction: column;
+        }
+        #projects{
+            display: flex;
+            flex-direction: column;
+        }
+        #skills{
+            display: flex;
+            flex-direction: column;
+        }
+        #contact{
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Video Background -->
+    <video autoplay muted loop id="myVideo">
+        <source src="https://video.wixstatic.com/video/c0bbc5_ea3fdc8d953b4dbcab20a021d2ef1389/1080p/mp4/file.mp4"
+            type="video/mp4">
+    </video>
+
+    <!-- Dark Overlay for Better Readability -->
+    <div class="overlay"></div>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">Naga Bhushan</a>
+                <button class="navbar-toggler menu border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact" id="contact-link">Contact</a></li>
+                        <li class="nav-item"><a href="Nagabhushan_resume.pdf" target="_blank" style="text-decoration: none; color:black">Resume</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sections -->
+    <section id="home" class="container-section">
+        <h2 class="mb-3 fw-bold">Hi, It's Naga Bhushan</h2>
+        <p>a passionate developer specializing in AI & ML.</p>
+    </section>
+
+    <section id="about" class="container-section">
+        <h1>About Me</h1>
+        <p>Dynamic and motivated Computer Science and Engineering fresher with a specialization in Artificial Intelligence and Machine Learning. Eager to leverage solid programming skills in Java and Python, along with proficiency in web development technologies such as HTML, CSS, and JavaScript, to contribute effectively to innovative projects in the field of AI and ML. Seeking an entry-level position where I can apply my knowledge and continue to develop my skills while making meaningful contributions to the team.
+        </p>
+    </section>
+
+    <section id="projects" class="container-section">
+        <h1>Projects</h1>
+       <ul >
+            <li type="none">
+                <h3><a href="https://github.com/NagabhushanBaduka/Automated-Crop-Yield-Prediction-HTML-CSS" style="text-decoration: none; color:rgb(196, 190, 190)" target="_blank">Automated Crop yield Prediction</a></h3>
+                <h6>Using python,Machine Learning,crop dataset.Developed an efficient model which produced more accuracy among different models </h6>
+            </li>
+            <li type="none">
+                <h3><a href="https://github.com/NagabhushanBaduka/face-detection-attendance-system" style="text-decoration: none; color:rgb(196, 190, 190)" target="_blank">Face Detection Attendence System</a></h3>
+                <h6>Using Python, Machine Learning,OpenCV.Developed a model a KNN model which finds the facial features and mark the Attendence in csv file</h6>
+            </li>
+            <li type="none">
+                <h3><a href="" style="text-decoration: none; color:rgb(196, 190, 190)" target="_blank">SwiftBite</a></h3>
+                <h6>Using React,Node.js,Mongodb.Developed a web application where a student orders food from Canteen </h6>
+            </li>
+       </ul>
+    </section>
+
+    <section id="skills" class="container-section">
+        <h1>Skills</h1>
+        <p>Proficient in Java, Python, HTML, CSS, JavaScript, React, Machine Learning and deep learning technologies.</p>
+    </section>
+
+    <section id="contact" class="container-section">
+        <h1>Contact</h1>
+        <h3><a href="mailto:nagabhushanbadka@gmail.com" style="text-decoration: none; color:rgb(196, 190, 190)">nagabhushanbadka@gmail.com</a></h3>
+        <h3><a href="https://www.linkedin.com/in/nagabhushan-baduka-722105240/" style="text-decoration: none; color:rgb(196, 190, 190)" target="_blank">LinkedIn</a></h3>
+        <h3><a href="https://github.com/NagabhushanBaduka/NagabhushanBaduka" style="text-decoration: none; color:rgb(196, 190, 190)" target="_blank">GitHub</a></h3>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
